@@ -1,7 +1,5 @@
 # 📱 MatinMovie 💚
 
-![Caricature](A_digital_caricature_of_a_young_man_with_sharp_fea.png)
-
 MatinMovie is an open-source Android movie application built with **Kotlin** and follows the **MVVM (Model-View-ViewModel)** architectural pattern. The app is designed to showcase movies by integrating with **The Movie Database (TMDB)** API.
 
 ---
