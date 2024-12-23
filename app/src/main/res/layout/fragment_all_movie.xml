@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.allmovie.AllMovieFragment">
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorShimmer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:id="@+id/txt_type_movies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/all_movie"
+        android:textAppearance="@style/TextStyle_medium"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.skydoves.androidveil.VeilRecyclerFrameView
+                android:id="@+id/recycler_popular"
+                android:layout_width="match_parent"
+                android:layout_height="830dp"
+                android:clipToPadding="false"
+                app:layout_constraintTop_toTopOf="parent"
+                app:veilFrame_baseAlpha="0.6"
+                app:veilFrame_baseColor="@color/colorGray200"
+                app:veilFrame_highlightAlpha="1.0"
+                app:veilFrame_highlightColor="#A4E6E6E6"
+                app:veilFrame_isItemWrapContentHeight="true"
+                app:veilFrame_isItemWrapContentWidth="true"
+                app:veilFrame_layout="@layout/shimmer_popular"
+                app:veilFrame_radius="8dp"
+                app:veilFrame_shimmerEnable="true"
+                app:veilFrame_veiled="true" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

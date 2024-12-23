@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MatinFilm</string>
+    <string name="Movie">Movies</string>
+    <string name="Popular">Popular</string>
+    <string name="SeeAll">See All</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="all_movie">All Movie</string>
+</resources>

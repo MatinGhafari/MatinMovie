@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_background_movie"
+                android:layout_width="330dp"
+                android:layout_height="380dp"
+                android:layout_marginTop="70dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Large" />
+
+            <TextView
+                android:id="@+id/txt_movie_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@style/TextStyle_medium"
+                android:textSize="27sp"
+                app:layout_constraintStart_toStartOf="@+id/img_background_movie"
+                app:layout_constraintTop_toBottomOf="@+id/img_background_movie" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_movie_name">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_star"
+                    tools:layout_editor_absoluteX="41dp"
+                    tools:layout_editor_absoluteY="520dp" />
+
+                <TextView
+                    android:id="@+id/txt_score_movie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textAppearance="@style/TextStyle_regular"
+                    android:textSize="17sp"
+                    tools:layout_editor_absoluteX="74dp"
+                    tools:layout_editor_absoluteY="516dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout"
+                app:layout_constraintTop_toBottomOf="@+id/txt_movie_name">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_global"
+                    tools:layout_editor_absoluteX="149dp"
+                    tools:layout_editor_absoluteY="520dp" />
+
+                <TextView
+                    android:id="@+id/txt_language"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textAppearance="@style/TextStyle_regular"
+                    android:textSize="17sp"
+                    tools:layout_editor_absoluteX="182dp"
+                    tools:layout_editor_absoluteY="516dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/txt_movie_name">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_clock"
+                    tools:layout_editor_absoluteX="262dp"
+                    tools:layout_editor_absoluteY="520dp" />
+
+                <TextView
+                    android:id="@+id/txt_movie_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textAppearance="@style/TextStyle_regular"
+                    android:textSize="17sp"
+                    tools:layout_editor_absoluteX="287dp"
+                    tools:layout_editor_absoluteY="516dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:padding="16dp"
+                android:textAppearance="@style/TextStyle_regular"
+                android:textDirection="ltr"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

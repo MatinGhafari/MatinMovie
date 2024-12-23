@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MatinFilm" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.MatinFilm" parent="Base.Theme.MatinFilm" >
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="Q">false</item>
+        <item name="android:windowBackground">@color/colorSurface</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:enforceStatusBarContrast" tools:targetApi="q">true</item>
+        <item name="android:enforceNavigationBarContrast" tools:targetApi="q">true</item>
+    </style>
+
+    <!--TextStyle Semibold-->
+    <style name="TextStyle_semibold">
+        <item name="android:textSize">28sp</item>
+        <item name="fontFamily">@font/font_semi</item>
+    </style>
+
+    <!--TextStyle bold-->
+    <style name="TextStyle_bold">
+        <item name="android:textSize">19sp</item>
+        <item name="fontFamily">@font/font_bold</item>
+    </style>
+
+    <!--TextStyle Medium-->
+    <style name="TextStyle_medium">
+        <item name="android:textSize">22sp</item>
+        <item name="fontFamily">@font/font_semi</item>
+    </style>
+
+    <!--TextStyle Regular-->
+    <style name="TextStyle_regular">
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/font_regular</item>
+    </style>
+
+    <!--Round ImageView-->
+    <style name="RoundImageViewProfile">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10%</item>
+    </style>
+
+
+
+
+
+</resources>
