@@ -20,11 +20,11 @@ MatinMovie is an open-source Android movie application built with **Kotlin** and
 
 
 
-  splash online           | offline      | 
+  Home          | All Movie      | 
 :-------------------------:|   :-------------------------:|
 <img src="https://s8.uupload.ir/files/screenshot_2024-12-23-22-46-59-726_ir.matin.matinfilm_8scs.jpg">| <img src="https://s8.uupload.ir/files/screenshot_2024-12-23-22-47-19-932_ir.matin.matinfilm_min9.jpg"> |
 
-Home                    | Home |
+Search                    | Home |
 :-------------------------:|:-------------------------:|
   <img src="https://s8.uupload.ir/files/screenshot_2024-12-23-22-48-08-263_ir.matin.matinfilm_20gz.jpg">| <img src="https://s8.uupload.ir/files/screenshot_2024-12-23-22-47-19-932_ir.matin.matinfilm_min9.jpg">| 
   
